@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Show Event</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url('https://www.thejungleni.com/app/uploads/2016/07/Dog-Show-webpage-header-background.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+<nav class="bg-gray-500 navbar navbar-expand-lg navbar-light bg-warning">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Dog Show 2025</a>
+</div>
+</nav>
+
+<div class="container mt-4">
+<div class="card text-center" style="background-color: rgba(255, 255, 255, 0.8);">
+<div class="card-body">
+<h2 class="card-title fw-bold">Welcome to Dog Show 2025</h2>
+<p class="card-text text-muted">
+Join us for a fun-filled day celebrating dog of all kinds! 
+Show off your furry, feathered, or scaly friend, and enjoy exciting activities, competitions, and more!
+</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eventDetailsModal">Learn More</button>
+</div>
+</div>
+
+<h3 class="mt-4 text-center">Register Now...</h3>
+<form class="mt-3">
+<div class="mb-3">
+<label for="ownerName" class="form-label">Owner's Name</label>
+<input type="text" class="form-control" id="ownerName" placeholder="Enter your name">
+</div>
+<div class="mb-3">
+<label for="dogName" class="form-label">Dog's Name</label>
+<input type="text" class="form-control" id="dogName" placeholder="Enter your dog's name">
+</div>
+<div class="mb-3">
+<label for="dogType" class="form-label">Dog Type</label>
+<select class="form-select" id="dogType">
+<option selected>Choose...</option>
+<option>Labrador Retriever</option>    
+<option>German Shepherd</option>
+<option>Golden Retriever</option>
+<option>Bulldog</option>
+<option>Rottweiler</option>
+<option>Other</option>
+</select>
+</div>
+<button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+<div class="alert alert-info mt-4" role="alert">
+Hurry! Registrations close on <strong>January 20, 2025</strong>.
+</div>
+</div>
+
+<div class="modal fade" id="eventDetailsModal" tabindex="-1" aria-labelledby="eventDetailsModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="eventDetailsModalLabel">Event Details</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body" style="background-color: silver;">
+<ul>
+    <li><strong>Date:</strong> February 10, 2025</li>
+    <li><strong>Location:</strong> GreenLand Park, Downtown</li>
+    <li><strong>Highlights:</strong> Dog Show, Best Dog Awards, Entertainment...</li>
+</ul>
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
